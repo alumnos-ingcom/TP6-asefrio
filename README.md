@@ -32,7 +32,7 @@ Adios restricciones de funcionalidad, usen todo lo que esté disponible de Pytho
 
 Muchos de los ejercicios son mas simples de implementar en multiples funciones separadas
 
-### Anagrama
+### 1.Anagrama
 
 Implementar una funcion que determine si dos cadenas son anagramas entre si, ignorando espacios y diferencias entre mayusculas y minusculas. (En el repositorio hay un archivo con ejemplos)
 
@@ -41,17 +41,17 @@ Implementar una funcion que determine si dos cadenas son anagramas entre si, ign
  * Riesgo – Sergio
  * Cardiografía – radiografía
 
-### Anagrama II
+### 2.Anagrama II
 
 Procesar el archivo de anagramas y verificar si todos los de la lista son anagramas. Solo es necesario indicar las palabras de cada linea son anagramas entre si. 
 
 Envien las palabras evaluadas y si son o no anagramas entre si por consola.
 
-### Copiadora
+### 3.Copiadora
 
 Crear un programa que solicite al usuario un archivo de entrada y uno de salida para copiar el contenido de un archivo en el otro.
 
-### Codificador
+### 4.Codificador
 
 Usando la función de para codificación del cesar el TP anterior, implementar las funciones necesarias para
 que se le solicite al usuario un archivo a codificar y la rotación. El archivo de salida es el mismo pero agregando al final `.cesar`
@@ -59,11 +59,11 @@ que se le solicite al usuario un archivo a codificar y la rotación. El archivo 
 La excepcion a capturar si el archivo no existe es `FileNotFoundError`
 
 
-### Descodificador
+### 5.Descodificador
 
 Usando la funcion para decodificar del César del TP anterior, implementar las funciones necesarias para tomar una archivo codificado (`.cesar`) y descodificarlo en un archivo nuevo que termine en `.decode` (esto es para evitar romper el archivo original).
 
-### Etiquetas HTML
+### 6.Etiquetas HTML
 
 HTML, siglas en inglés de HyperText Markup Language (‘lenguaje de marcado de hipertexto’), hace referencia al lenguaje de marcado para la elaboración de páginas web.
 
@@ -119,7 +119,7 @@ Usando esa funcion en `principal()`, creen una página simple (puede quedar todo
 Hay muchisimo más en la generación de páginas HTML, pero con esto tenemos mucho más que suficiente.
 Por más que el navegador se queje, **no tomen recaudos** con las etiquetas que sean solicidatas.
 
-#### Opcional
+#### 6.2 Opcional
 Envien la página generada a un archivo cuyo nombre pueda elegir el usuario.
 
 ### Etiquetas HTML parte 2 (opcional)
@@ -160,7 +160,7 @@ Es posible crear una imagen con que actue como enlace combinando la etiqueta `A`
 <a href="https://www.unrn.edu.ar"><img src="https://www.unrn.edu.ar/images/favicon/apple-touch-icon-152x152.png">Logo UNRN en internet</img></a>
 ```
 
-#### Consigna
+#### 7.Consigna
 
 Agregar un argumento adicional a la función que crea etiquetas, de forma que acepte un diccionario para agregar los atributos a la etiqueta y crear un programa que cree un sitio simple por medio de las funciones y lo guarde como `pagina.html`
 
