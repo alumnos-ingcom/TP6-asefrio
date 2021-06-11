@@ -1,7 +1,7 @@
 ################
 # Agustin Anhorn - @agusanhorn
 # Tomás Sautú - @TomasSautu
-# Marcio Betanz - @Marsiocons
+# Marcio Betanzo - @Marsiocons
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
