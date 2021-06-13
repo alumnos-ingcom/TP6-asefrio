@@ -79,7 +79,8 @@ Desencriptar = 2
     (¡tener en cuentan que las tildes darán un error de encriptación!)""")
         rotacion = ingreso_entero("Ingrese la rotación con la que quiere encriptar: ")
         texto = input("Ingrese el texto que quiere encriptar: ")
-        encriptado = codificar_cifrado_cesar(rotacion, texto, signo = 1) #FIJARSE QUE EL ARGUMENTO "signo" ESTÁ CON "= 1", DE ESTA FORMA ENCRIPTA        print(f'El texto encripatado con una rotación de {rotacion} es: "{encriptado}"')
+        encriptado = codificar_cifrado_cesar(rotacion, texto, signo = 1) #FIJARSE QUE EL ARGUMENTO "signo" ESTÁ CON "= 1", DE ESTA FORMA ENCRIPTA
+        print(f'El texto encripatado con una rotación de {rotacion} es: "{encriptado}"')
     else:
         print("""Este programa hará una DESENCRIPTACIÓN con Cifrado Cesar con la rotación y mensaje que usted ingrese
     (¡tener en cuenta que las tildes darán un error de encriptación!)""")
