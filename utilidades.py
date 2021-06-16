@@ -5,6 +5,20 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
+class IngresoIncorrecto(Exception):
+    """Esta es la Excepcion para el ingreso incorrecto"""
+    pass
+
+def ingreso_entero(mensaje):
+    """
+    Esta funcion convierte un número en texto en un número entero.
+    """
+    ingreso = input(mensaje)
+    try:
+        entero = int(ingreso)
+    except ValueError as err:
+        raise IngresoIncorrecto("No era un número genio!") from err
+    return entero
 
 def encriptar_cesar(texto, rotacion):
     
