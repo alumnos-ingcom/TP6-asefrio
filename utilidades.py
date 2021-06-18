@@ -37,15 +37,7 @@ def cifrado_cesar(rotacion, texto, utilidad = 1):
                 #Comprueba si el carácter esta entre los carácteres especiales de la "Z" a la "a". Si es asi, salta hacia la "a" ó "Z"
                 if dato_texto > ord('Z') and dato_texto < ord('a'):
                     dato_texto = salto[0]
-                #Compto_texto > ord('z'):
-                    dato_texto = salto[3]
-
-            dato_texto = chr(dato_texto)
-        else:
-            dato_texto = chr(dato_texto)
-        texto_encriptado_lista.append(dato_texto)  
-    texto_encriptado = "".join(texto_encriptado_lista)
-    return texto_encriptadorueba si el carácter esta entre los carácteres especiales del "9" a la "A". Si es asi, salta hacia la "A" ó "9"
+                #Comprueba si el carácter esta entre los carácteres especiales del "9" a la "A". Si es asi, salta hacia la "A" ó "9"
                 if dato_texto > ord('9') and dato_texto < ord('A'):
                     dato_texto = salto[1]
                 #Comprueba si el carácter esta entre los carácteres especiales antes del "0". Si es asi, salta hacia la "z" ó "0"
