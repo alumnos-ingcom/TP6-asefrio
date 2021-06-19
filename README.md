@@ -105,7 +105,7 @@ La razon de que el contenido es un string; es que la funcion puede recibir lo qu
 <p><h1>Hola HTML</h1>Párrafo</p>
 ```
 
-Usando esa funcion en `principal()`, creen una página simple (puede quedar todo en una sola linea) con la siguiente estructura como mínimo.
+6.1.Usando esa funcion en `principal()`, creen una página simple (puede quedar todo en una sola linea) con la siguiente estructura como mínimo.
 
 ```html
 <html>
