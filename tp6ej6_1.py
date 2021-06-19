@@ -7,7 +7,7 @@
 
 def hacer_etiquetas(contenido, etiqueta):
     
-    etiqueta_contenido = f"<{etiqueta}>contenido</{etiqueta}>"
+    etiqueta_contenido = f"<{etiqueta}>{contenido}</{etiqueta}>"
     
     return etiqueta_contenido
 
