@@ -85,6 +85,12 @@ def borrar_extensiones(nombre):
 def crear_archivo_vacio(nombre):
     archivo_encriptado = open(nombre, "w+")
     archivo_encriptado.close()
+    
+def obtener_extension(nombre):
+    nombre = nombre[::-1]
+    extension = borrar_extensiones(nombre)
+    extension = extension[::-1]
+    return extension
 
 
 

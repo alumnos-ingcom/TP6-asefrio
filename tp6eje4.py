@@ -25,17 +25,17 @@ def encriptar_archivo(n_archivo, rotacion):
     
     
     #Un for leyendo línea por línea
-    for posicion, linea in enumerate(texto):
+    for linea in texto:
         
         #Encriptamos una nueva línea en cada vuelta
-        linea_encriptada = cifrado_cesar(1, linea, 1)
+        linea_encriptada = cifrado_cesar(rotacion, linea, 1)
         #Metemos la encriptación en la lista
         texto_encriptado.append(linea_encriptada)
     
     #Cerramos el archivo
     archivo.close()
     
-    nombre_archivo = borrar_extensiones(archivo.name)
+    nombre_archivo = borrar_extensiones(n_archivo)
     nombre_archivo = nombre_archivo + ".cesar"
     
     crear_archivo_vacio(nombre_archivo)
@@ -56,6 +56,10 @@ def principal():
     print("este programa y que tiene que agregar la extensión del mismo.")
     archivo = input("> : ")
     rotacion = ingreso_entero("Ingrese la rotación para encriptar: # ")
+    
+    if (rotacion <= 0):
+        raise IngresoIncorrecto("El número debe ser mayor a 0!")
+    
     
     encriptar_archivo(archivo, rotacion)
     
