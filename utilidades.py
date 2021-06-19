@@ -9,6 +9,10 @@ class IngresoIncorrecto(Exception):
     """Esta es la Excepcion para el ingreso incorrecto"""
     pass
 
+class ArchivoInexistente(Exception):
+    """Esta es la excepción para el manejo de archivos inexistentes"""
+    pass
+
 def ingreso_entero(mensaje):
     """
     Esta funcion convierte un número en texto en un número entero.

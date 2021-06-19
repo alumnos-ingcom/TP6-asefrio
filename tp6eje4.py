@@ -5,13 +5,18 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
-from utilidades import ingreso_entero, IngresoIncorrecto, cifrado_cesar, borrar_extensiones, crear_archivo_vacio
+from utilidades import ingreso_entero, IngresoIncorrecto, ArchivoInexistente, cifrado_cesar, borrar_extensiones, crear_archivo_vacio
 
 def encriptar_archivo(n_archivo, rotacion):
 
     
-    #Abrimos archivo
-    archivo = open(n_archivo)
+    #Intentamos abrir el archivo
+    try:
+        archivo = open(n_archivo)
+    except FileNotFoundError as err:
+        #Si no existe le mandamos la excepción
+        raise ArchivoInexistente("El archivo no existe!") from err
+    
     #Creamos una lista con cada línea
     texto = archivo.readlines()
     #Creamos una lista vacía que será llenada con las líneas encriptadas
