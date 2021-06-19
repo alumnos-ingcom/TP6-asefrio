@@ -8,7 +8,6 @@
 def quitar_acentos_mayusculas_comas(texto):
     texto = texto.lower()
     texto = texto.replace(",", "")
-    texto = texto.strip()
     texto = texto.replace(" ", "")
     for j in texto:
         if j == "á":
@@ -26,13 +25,16 @@ def quitar_acentos_mayusculas_comas(texto):
 def definir_anagrama(texto1, texto2):
     texto1 = quitar_acentos_mayusculas_comas(texto1)
     texto2 = quitar_acentos_mayusculas_comas(texto2)
-    try:
-        for i in texto1:
-            texto2.index(i)
-        for z in texto2:
-            texto1.index(z)
-        return True
-    except:
+    if len(texto1) == len(texto2):
+        try:
+            for i in texto1:
+                texto2.index(i)
+            for z in texto2:
+                texto1.index(z)
+            return True
+        except:
+            return False
+    else:
         return False
 
 def principal():
