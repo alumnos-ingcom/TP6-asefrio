@@ -68,6 +68,19 @@ def obtener_distancia(numero_uno, numero_dos):
             contador = contador + 1
             numero_dos = numero_dos + 1
         return contador
+    
+def borrar_extensiones(nombre):
+    nombre_sin_extension = list()
+    for letra in nombre:
+        if (letra == "."):
+            nuevo_nombre = "".join(nombre_sin_extension)
+            return nuevo_nombre
+        else:
+            nombre_sin_extension.append(letra)
+
+def crear_archivo_vacio(nombre):
+    archivo_encriptado = open(nombre, "w+")
+    archivo_encriptado.close()
 
 
 
