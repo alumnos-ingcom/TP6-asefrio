@@ -41,7 +41,7 @@ def desencriptar_archivo(n_archivo, rotacion):
     crear_archivo_vacio(nombre_archivo)
     archivo_desencriptado = open(nombre_archivo, "a")
     
-    for linea in texto_encriptado:
+    for linea in texto:
         archivo_desencriptado.write(linea)
     
     archivo_desencriptado.close()
@@ -49,10 +49,12 @@ def desencriptar_archivo(n_archivo, rotacion):
 
 def principal():
     
-    print("Ingrese el nombre del archivo que desea desencriptar: ")
-    print("Recuerde que el archivo debe existir en la misma ruta donde ejecuta")
-    print("este programa y que tiene que agregar la extensión del mismo.")
-    print("Si la extensión no es 'cesar' el programa no funcionará.")
+    print("""
+    Ingrese el nombre del archivo que desea desencriptar:
+    Recuerde que el archivo debe existir en la misma ruta donde ejecuta
+    este programa y que tiene que agregar la extensión del mismo.
+    Si la extensión no es 'cesar' el programa no funcionará.
+    """)
     archivo = input("> : ")
     rotacion = ingreso_entero("Ingrese la rotación para encriptar: # ")
     
